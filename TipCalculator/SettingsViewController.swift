@@ -36,9 +36,15 @@ class SettingsViewController: UIViewController, UIApplicationDelegate {
         
         defaultTip = Double(ChangeDefaultTipField.text!)!
         defaultTipLabel.text = "$\(defaultTip)"
-        defaults.set(ChangeDefaultTipField.text, forKey: "myName");
-        defaults.synchronize()
+        
         //ChangeDefaultTipField.text = "";
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        if(ChangeDefaultTipField.text != nil && (ChangeDefaultTipField.text?.characters.count)! > 0){
+            defaults.set(ChangeDefaultTipField.text, forKey: "myName");
+            defaults.synchronize()
+        }
     }
 
     
