@@ -14,9 +14,9 @@ The following **required** functionality is complete:
 
 The following **optional** features are implemented:
 * [Yes] Settings page to change the default tip percentage.
-* [ ] UI animations
+* [No] UI animations
 * [Yes] Remembering the bill amount across app restarts (if <10mins)
-* [ ] Using locale-specific currency and currency thousands separators.
+* [No] Using locale-specific currency and currency thousands separators.
 * [Yes] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
@@ -28,15 +28,14 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://media.giphy.com/media/l0HUpHlscmGSvUKys/giphy.gif' />
+<img src='https://media.giphy.com/media/3oFzmrGeGG0VE9CHE4/giphy.gif' />
 
 
 ## Notes
 
-Please use the URL to see my gif. I could not use LICE to make and upload my GIF
-Creating a new view controller and the navigation controller was fairly simple.
-I had difficulty in updating my default tip and using user defaults, but I got it to work.
-I could not get default tip to update automatically. I need to change the segmented view first and then only is the default tip changed
+- Creating a new view controller and the navigation controller was fairly simple.
+- I had difficulty in updating my default tip and using user defaults, but I got it to work.
+- I could not get default tip to update automatically. I need to change the segmented view first and then only is the default tip changed
 
 ## License
 
